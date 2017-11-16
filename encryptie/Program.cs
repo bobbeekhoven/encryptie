@@ -10,14 +10,19 @@ namespace encryptie
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input whatever you want to decrypt");
+            // Here you input the word(s) or sentences you want to encrypt
+            Console.WriteLine("Input whatever you want to encrypt");
 
+            //This is were the program turns your input into the string value
+            // which the program needs in order to encrypt your input
             string value = Console.ReadLine();
-            
+
+            // In this part the value is truly being encrypted with help of 
+            // the code determined in the static class Rot13 below
             value = Rot13.Transform(value);
 
+            // This is where you get your encrypted output
             Console.WriteLine(value);
-
             Console.Read();
         }
 

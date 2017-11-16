@@ -10,16 +10,15 @@ namespace encryptie
     {
         static void Main(string[] args)
         {
-            string value = "Lorem ipsum dolor sit amet consectetuer adipiscing elit";
-            Console.WriteLine(value);
+            Console.WriteLine("Input whatever you want to decrypt");
+
+            string value = Console.ReadLine();
             
             value = Rot13.Transform(value);
-            Console.WriteLine(value);
-            Console.Read();
 
-            //value = Rot13.Transform(value);
-            //Console.WriteLine(value);
-            //Console.Read();
+            Console.WriteLine(value);
+
+            Console.Read();
         }
 
         static class Rot13
